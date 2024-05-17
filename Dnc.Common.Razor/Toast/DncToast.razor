@@ -1,0 +1,17 @@
+﻿@inherits DncToastComponent
+
+<div id="dnc-toast" class="container">
+    @if(Show)
+    {
+        <div class="d-flex justify-content-between dnc-toast @ToastBackgroundColor">
+            <div class="toaster-content d-flex justify-content-center flex-column">
+                @Message
+            </div>
+            <div class="dnc-toast-close">
+                <a href="javascript:void(0)" @onclick="Close">
+                    <i class="fa fa-times dnc-toast-close"></i>
+                </a>
+            </div>
+        </div>
+    }
+</div>
